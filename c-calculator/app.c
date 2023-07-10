@@ -14,23 +14,17 @@ void test_add()
     printf("All tests passed for addition.\n");
 }
 
+int multiply(int a, int b)
+{
+    return a * b;
+}
+
 void test_multiply()
 {
     assert(multiply(2, 2) == 4);
     assert(multiply(-2, 2) == -4);
     assert(multiply(0, 2) == 0);
     printf("All tests for multiplication passed.\n");
-}
-
-int add(int a, int b)
-{
-
-    return a + b;
-}
-
-int multiply(int a, int b)
-{
-    return a * b;
 }
 
 int main()
