@@ -8,11 +8,10 @@
 
 int main()
 {
-    char ch = 'a';
-
-    // char is a number
-    printf("ch: %c\n", ch + 1); // b
-    printf("ch: %c\n", ch + 2); // c
+    for (char ch = 'a'; ch < 'a' + 26; ch++)
+    {
+        printf("ch: %c\n", ch);
+    }
 
     // 利用这一特性 写个循环 打印出 a-z
     return 0;
