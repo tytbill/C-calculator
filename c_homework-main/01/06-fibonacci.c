@@ -9,6 +9,13 @@
 
 // TODO: Write the fibonacci function here
 // Use recursion to solve this problem.
+void test_fibonacci()
+{
+    assert(fibonacci(0) == 0);
+    assert(fibonacci(1) == 1);
+    assert(fibonacci(10) == 55);
+    printf("All tests passed!\n");
+}
 
 int main()
 {
