@@ -9,9 +9,15 @@
  * TODO: 对数组求和
  * 将数组 array 中的所有元素相加，结果赋值给 result
  */
-void sum_array() // TODO: 里面的参数是你来写哦
+void sum_array(int* array, int len, int* result) // TODO: 里面的参数是你来写哦
 {
-    // TODO: 你来写吧
+    int i;
+    for (i = 0; i < len; i++)
+    {
+        printf("array[i]的值是: %d\n", array[i]);
+        *result += array[i];
+        printf("*result的值是: %d\n", *result);
+    }
 }
 
 void test_sum_array()

@@ -9,9 +9,14 @@
  * TODO: 用指针实现找最小值
  * 将数组 array 中的最小值赋值给 min
  */
-void find_min() // TODO: 里面的参数是你来写哦
+void find_min(int* array, int length, int* min) // TODO: 里面的参数是你来写哦
 {
-    // TODO: 你来写吧
+    *min = array[0];
+    for (int i = 1; i < length; i++)
+    {
+        if (array[i] < array[i - 1])
+            *min = array[i];
+    }
 }
 
 void test_find_min()
